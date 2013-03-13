@@ -2,8 +2,9 @@
 
 configFile="batch-config.ini"
 
-uname="<username>"
-pword="<password>"
+uname=$USERNAME
+pword=$PASSWORD
+
 env=$1
 batchID=-1				        #Batch ID
 jobXML="null"                     	        #Batch XML
@@ -16,15 +17,10 @@ echo Environment: $env
 
 if [ "$env" == "dev" ] || [ "$env" == "stage" ]; then
 	env="$env-batch"
-else
-	echo Did you mean to submit to production \(yes/no\)?
-	read answer
-	if [ $answer == "yes" ]; then
-		env="batch"
-	else
-		echo Exiting...
-		exit 2
-	fi
+fi
+
+if [ "$env" == "pro" ]; then
+	env="batch"
 fi
 
 

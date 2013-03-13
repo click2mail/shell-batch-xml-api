@@ -9,14 +9,16 @@ After you have one of the two, you will need an account with API access at Click
 
 You can find the documentation for the API here: https://developers.click2mail.com/batch-xml/molpro/getting-started/main
 
-In test-batch.sh first set up your username and password by setting the uname and pword parameters.
-
 In the batch-config.ini you can set the xml and pdf you will use for the job
 
 xml - the xml file you will be submitting
 pdf - the pdf file
 
-Then you can run the program and pass the environment as a command line argument (i.e. ./test-batch.sh dev). If you leave it blank (for production) the program will ask you if you're sure you'd like to submit to production, this is so you don't accidentally use money when not intended to.
+Set the username and password using the export variables USERNAME & PASSWORD
+
+Then you can run the program and pass the environment as a command line argument (i.e. ./test-batch.sh stage). Passing "stage" will allow you to test against our staging server. To submit a real order against production pass "pro".
+
+export USERNAME=username; export PASSWORD=username; bash test-batch.sh pro
 
 The test-batch.sh script has outputs such as "Response after pdf upload", each one of these should be empty. The only time a response will actually print, is if there is an error.
 
