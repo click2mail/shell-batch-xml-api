@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<batch xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<username>jdoe123</username>
+	<password>Password123</password>
+	<filename>batch-test.pdf</filename>
+	<job>
+		<startingPage>1</startingPage>
+		<endingPage>2</endingPage>
+		<printProductionOptions>
+			<documentClass>Letter 8.5 x 11</documentClass>
+			<layout>Address on Separate Page</layout>
+			<productionTime>Next Day</productionTime>
+			<envelope>#10 Double Window</envelope>
+			<color>Black and White</color>
+			<paperType>White 24#</paperType>
+			<printOption>Printing both sides</printOption>
+			<mailClass>First Class</mailClass>
+		</printProductionOptions>
+		<returnAddress>
+			<name>John Doe</name>
+			<organization>Click2Mail</organization>
+			<address1>92 G Industrial Way</address1>
+			<address2></address2>
+			<city>Troy</city>
+			<state>VA</state>
+			<postalCode>22974</postalCode>
+		</returnAddress>
+		<recipients>
+			<address>
+				<name>Alvin Portabello</name>
+				<organization></organization>
+				<address1>9706 Tree Hollow Court</address1>
+				<address2></address2>
+				<address3></address3>
+				<city>Fairfax Station</city>
+				<state>VA</state>
+				<postalCode>22903</postalCode>
+				<country>US</country>
+			</address>
+			<address>
+				<name>Joseph Claus</name>
+				<organization></organization>
+				<address1>8022 Griffinsburg Road</address1>
+				<address2></address2>
+				<address3></address3>
+				<city>Boston</city>
+				<state>VA</state>
+				<postalCode>22713</postalCode>
+				<country>US</country>
+			</address>
+		</recipients>
+	</job>
+	<job>
+		<startingPage>3</startingPage>
+		<endingPage>4</endingPage>
+		<printProductionOptions>
+			<documentClass>Letter 8.5 x 11</documentClass>
+			<layout>Address on Separate Page</layout>
+			<productionTime>Next Day</productionTime>
+			<envelope>#10 Double Window</envelope>
+			<color>Black and White</color>
+			<paperType>White 24#</paperType>
+			<printOption>Printing both sides</printOption>
+			<mailClass>First Class</mailClass>
+		</printProductionOptions>
+		<returnAddress>
+			<name>John Doe</name>
+			<organization>Click2Mail</organization>
+			<address1>92 G Industrial Way</address1>
+			<address2></address2>
+			<city>Troy</city>
+			<state>VA</state>
+			<postalCode>22974</postalCode>
+		</returnAddress>
+		<recipients>
+			<address>
+				<name>Steve Jobs</name>
+				<organization></organization>
+				<address1>1 Infinite Loop</address1>
+				<address2></address2>
+				<address3></address3>
+				<city>Cupertino</city>
+				<state>CA</state>
+				<postalCode>95014</postalCode>
+				<country>US</country>
+			</address>
+			<address>
+				<name>Mr. Romney</name>
+				<organization></organization>
+				<address1>1600 Pennsylvania Avenue</address1>
+				<address2></address2>
+				<address3></address3>
+				<city>Washington</city>
+				<state>D.C.</state>
+				<postalCode>20500</postalCode>
+				<country>US</country>
+			</address>
+		</recipients>
+	</job>
+	<job>
+		<startingPage>5</startingPage>
+		<endingPage>6</endingPage>
+		<printProductionOptions>
+			<documentClass>Letter 8.5 x 11</documentClass>
+			<layout>Address on Separate Page</layout>
+			<productionTime>Next Day</productionTime>
+			<envelope>#10 Double Window</envelope>
+			<color>Black and White</color>
+			<paperType>White 24#</paperType>
+			<printOption>Printing both sides</printOption>
+			<mailClass>First Class</mailClass>
+		</printProductionOptions>
+		<returnAddress>
+			<name>John Doe</name>
+			<organization>Click2Mail</organization>
+			<address1>92 G Industrial Way</address1>
+			<address2></address2>
+			<city>Troy</city>
+			<state>VA</state>
+			<postalCode>22974</postalCode>
+		</returnAddress>
+		<recipients>
+			<address>
+				<name>Peter Griffin</name>
+				<organization></organization>
+				<address1>31 Spooner St</address1>
+				<address2></address2>
+				<address3></address3>
+				<city>Providence</city>
+				<state>RI</state>
+				<postalCode>02907</postalCode>
+				<country>US</country>
+			</address>
+			<address>
+				<name>Donald Trump</name>
+				<organization>The Trump Company</organization>
+				<address1>725 Fifth Avenue</address1>
+				<address2></address2>
+				<address3></address3>
+				<city>New York</city>
+				<state>NY</state>
+				<postalCode>10022</postalCode>
+				<country>US</country>
+			</address>
+		</recipients>
+	</job>
+	<job>
+		<startingPage>7</startingPage>
+		<endingPage>8</endingPage>
+		<printProductionOptions>
+			<documentClass>Letter 8.5 x 11</documentClass>
+			<layout>Address on Separate Page</layout>
+			<productionTime>Next Day</productionTime>
+			<envelope>#10 Double Window</envelope>
+			<color>Black and White</color>
+			<paperType>White 24#</paperType>
+			<printOption>Printing both sides</printOption>
+			<mailClass>First Class</mailClass>
+		</printProductionOptions>
+		<returnAddress>
+			<name>John Doe</name>
+			<organization>Click2Mail</organization>
+			<address1>92 G Industrial Way</address1>
+			<address2></address2>
+			<city>Troy</city>
+			<state>VA</state>
+			<postalCode>22974</postalCode>
+		</returnAddress>
+		<recipients>
+			<address>
+				<name>Lee Garvey</name>
+				<organization></organization>
+				<address1>3103 10th ST N</address1>
+				<address2>Suite 201</address2>
+				<address3></address3>
+				<city>Arlington</city>
+				<state>VA</state>
+				<postalCode>22201</postalCode>
+				<country>US</country>
+			</address>
+			<address>
+				<name>Jessie Wellington</name>
+				<organization></organization>
+				<address1>31 Seminole Trail</address1>
+				<address2></address2>
+				<address3></address3>
+				<city>Palmyra</city>
+				<state>VA</state>
+				<postalCode>22963</postalCode>
+				<country>US</country>
+			</address>
+		</recipients>
+	</job>
+	<job>
+		<startingPage>9</startingPage>
+		<endingPage>10</endingPage>
+		<printProductionOptions>
+			<documentClass>Letter 8.5 x 11</documentClass>
+			<layout>Address on Separate Page</layout>
+			<productionTime>Next Day</productionTime>
+			<envelope>#10 Double Window</envelope>
+			<color>Black and White</color>
+			<paperType>White 24#</paperType>
+			<printOption>Printing both sides</printOption>
+			<mailClass>First Class</mailClass>
+		</printProductionOptions>
+		<returnAddress>
+			<name>John Doe</name>
+			<organization>Click2Mail</organization>
+			<address1>92 G Industrial Way</address1>
+			<address2></address2>
+			<city>Troy</city>
+			<state>VA</state>
+			<postalCode>22974</postalCode>
+		</returnAddress>
+		<recipients>
+			<address>
+				<name>Antionette Collins</name>
+				<organization>C2M</organization>
+				<address1>92 G Industrial Way</address1>
+				<address2></address2>
+				<address3></address3>
+				<city>Troy</city>
+				<state>VA</state>
+				<postalCode>22974</postalCode>
+				<country>US</country>
+			</address>
+			<address>
+				<name>Gaben</name>
+				<organization></organization>
+				<address1>PO BOX 1688</address1>
+				<address2></address2>
+				<address3></address3>
+				<city>Bellevue</city>
+				<state>WA</state>
+				<postalCode>98009</postalCode>
+				<country>US</country>
+			</address>
+		</recipients>
+	</job>
+</batch>
