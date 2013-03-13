@@ -1,7 +1,7 @@
-#/!bin/bash
+#!/bin/bash
 
-uname="<username>"
-pword="<password>"
+uname=$USERNAME
+pword=$PASSWORD
 env=$1
 batchID=$2
 

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-configFile="batch-config.ini"
+source batch-config.sh
 
 uname=$USERNAME
 pword=$PASSWORD
@@ -14,7 +14,6 @@ temp=""
 echo
 echo Environment: $env
 
-
 if [ "$env" == "dev" ] || [ "$env" == "stage" ]; then
 	env="$env-batch"
 fi
@@ -23,31 +22,14 @@ if [ "$env" == "pro" ]; then
 	env="batch"
 fi
 
-
-while read LINE
-do
-	if [[ "$LINE" =~ "xml" ]]; then
-		jobXML=${LINE:5}
-	fi
-	if [[ "$LINE" =~ "pdf" ]]; then
-		jobDOC=${LINE:5}
-	fi
-done < $configFile
-
-
-jobXML=`echo $jobXML | tr -s " "`
-jobDOC=`echo $jobDOC | tr -s " "`
-
-jobXML="@$jobXML"
-jobDOC="@$jobDOC"
+jobXML=$xml
+jobDOC=$pdf
 
 echo
-echo Job XML: $jobXML
+echo Job XML: "$jobXML"
 
 echo
-echo Job Doc: $jobDOC
-
-
+echo Job Doc: "$jobDOC"
 
 
 #Create batch order and get batch id
@@ -70,16 +52,16 @@ echo
 batchID=${batchID:3}
 echo Batch ID = $batchID
 
-
+echo $jobXML
 
 #Upload the batch XML
-temp=`curl -X PUT https://$uname:$pword@$env.click2mail.com/v1/batches/$batchID -H "Content-Type: application/xml" --data-binary $jobXML`
+temp=`curl -X PUT https://$uname:$pword@$env.click2mail.com/v1/batches/$batchID -H "Content-Type: application/xml" --data-binary "@$jobXML"`
 echo
 echo Response from XML upload: $temp
 
 
 #Upload PDF
-temp=`curl -X PUT https://$uname:$pword@$env.click2mail.com/v1/batches/$batchID -H "Content-Type: application/pdf" --data-binary $jobDOC`
+temp=`curl -X PUT https://$uname:$pword@$env.click2mail.com/v1/batches/$batchID -H "Content-Type: application/pdf" --data-binary "@$jobDOC"`
 
 echo
 echo Response from PDF upload: $temp
