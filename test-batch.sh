@@ -1,6 +1,6 @@
 #!/bin/bash
 
-	="batch-config.ini"
+configFile="batch-config.ini"
 
 uname=$USERNAME
 pword=$PASSWORD
@@ -46,6 +46,9 @@ echo Job XML: $jobXML
 
 echo
 echo Job Doc: $jobDOC
+
+
+
 
 #Create batch order and get batch id
 temp=`curl -X POST https://$uname:$pword@$env.click2mail.com/v1/batches`
